@@ -1,0 +1,343 @@
+:root {
+    --color_background: #f0f2f5;
+    --color_button_fb: #0866ff;
+    --font_text: Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layer
+{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 22;
+    opacity: 0.5;
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+    height: 100%;
+    /* display: none; */
+}
+
+.top {
+    width: 100%;
+    height: 700px;
+    background-color: var(--color_background);
+}
+
+.top .top1 {
+    padding: 75px 0px 110px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.top .top1 .main {
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    width: 980px;
+    height: 100%;
+}
+
+.top .top1 .main .left {
+    margin-right: 30px;
+}
+
+.top .top1 .main .left img {
+    width: 321px;
+    height: 106px;
+    margin-top: 95px;
+    margin-left: -27px;
+}
+
+.top .top1 .main .left h2 {
+    width: 500px;
+    height: auto;
+    font-family: var(--font_text);
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.top .top1 .main .right {
+    width: 450px;
+    height: 496px;
+}
+
+.top .top1 .main .right .right1 {
+    width: 450px;
+    height: 456px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logsign {
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 60px;
+    box-shadow: 0px 2px 10px 1px rgba(71, 71, 71, 0.52);
+}
+
+.logsign input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid #eeebeb;
+    border-radius: 5px;
+    outline: none;
+}
+
+.logsign input:focus {
+    box-shadow: 0px 0px 1px 1px rgb(22, 111, 229);
+}
+
+.logsign button {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    padding: 13px 0;
+    cursor: pointer;
+    background: var(--color_button_fb);
+}
+
+.logsign button:hover {
+    background: #1877f2;
+}
+
+.logsign a {
+    color: var(--color_button_fb);
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: block;
+    font-family: var(--font_text);
+}
+
+.logsign a:hover {
+    text-decoration: underline;
+}
+
+.logsign hr {
+    border: 1px solid #dadde1;
+    margin-bottom: 15px;
+}
+
+.logsign .create_button a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background: #36a420;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.logsign .create_button a:hover {
+    background: #42b72a;
+}
+
+.right .page_msg {
+    margin-top: -20px;
+    margin-left: 110px;
+}
+
+.right .page_msg span {
+    color: #1c1e21;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.right .page_msg span a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.right .page_msg span a:hover {
+    text-decoration: underline;
+}
+
+.signup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 432px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(172, 172, 172), 0 8px 16px rgb(172, 172, 172);
+    padding-bottom: 18px;
+    border-radius: 8px;
+    z-index: 222222;
+}
+.signup .topp
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 18px;
+}
+.topp>div>h2
+{
+    font-size: 32px;
+    font-weight: bold;
+    font-family: var(--font_text);
+}
+.topp>div>p
+{
+    color: #606770;
+    line-height: 24px;
+    font-size: 15px;
+    font-family: var(--font_text);
+}
+.topp img
+{
+    padding-bottom: 35px;
+    cursor: pointer;
+    width: 25px;
+}
+hr
+{
+    border: 0.1px;
+    background: grey;
+}
+.signup_body
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+}
+.same
+{
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 149, 149);
+}
+.same:focus
+{
+    border: 1px solid rgb(27, 27, 27);
+}
+.name
+{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+.bottom input
+{
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.birthday
+{
+    padding: 0 15px;
+}
+.birthday .text,
+.gender .text
+{
+    color: #606770;
+    font-size: 14px;
+}
+.birthday select
+{
+    border-radius: 5px;
+    padding: 7px 35px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.date
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.gender
+{
+    padding: 0 15px;
+}
+.gender select
+{
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+.content
+{
+    margin: 10px 0px;
+    font-size: 13px;
+    font-family: var(--font_text);
+}
+.content>.p1,
+.content>.p2
+{
+    margin: 7px 14.5px; 
+    color: gray;
+}
+.content>.p1>.blue,
+.content>.p2>.blue
+{
+    color: #0866ff;
+}
+.text
+{
+    font-size: 12px;
+    font-family: var(--font_text);
+}
+.signin
+{
+    height: 36px;
+    width: 149px;
+    background: #42b72a;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 145px;
+}
+.show
+{
+    display: block;
+}
